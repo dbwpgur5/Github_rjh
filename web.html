@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <!--show that this page is made of html-->
-
+<html>
 <head>
-    <title> WEB1 - html </title>
+    <title> Daily Music </title>
+    <link href="https://cdn-icons-png.flaticon.com/128/1947/1947931.png" rel="icon" type="image/x-icon">
     <meta charset="utf-8">
+    <style>
+        body {
+          background-color: #333;
+        }
+    
+        .text-rainbow-animation {
+            font-family: sans-serif;
+            font-size: 50px;
+            background-image: 
+            linear-gradient(to right, #51D8FF,	#46C7FF,#3DB5FF,#239BFE,#1672F9,#239BFE,#3DB5FF,#46C7FF, #51D8FF); 
+        
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;  
+            animation: rainbow-animation 100s linear infinite;
+        }
+
+        .gradient-line {
+            border: 0;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, #7de3ff,#51D8FF,#46C7FF,#3DB5FF,#239BFE,#1672F9, #7de3ff);
+            background-size: 300% 100%;
+            margin: 20px 0;
+            border-radius: 2px;
+
+            animation: rainbow-animation 15s linear infinite;
+        }
+    
+        @keyframes rainbow-animation {
+          to {
+            background-position: 4500vh;
+          }
+        }
+      </style>
 </head>
 
 <!--divide head and body-->
 
 <body>
-    <h1><p style="text-align: center; margin: 15px;"> WEB </p></h1>
+    <h1 class="text-rainbow-animation"><p style="text-align: center;"> Daily Music </p></h1>
+    <div class="gradient-line"></div>
+    
     <ol>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
     </ol>
 
-    <h1>HTML</h1>
-    
     <h6><a href="secret.html" target="_blank" title="?">
         <p style="text-align: right; margin: 30px"> secret </p>
     </a></h6>
@@ -37,3 +73,4 @@
     <!--<tag> contents </tag> : tag contains various functions-->
     <!--<meta charset="utf-8"> : save file to utf-8, when korean char is broken-->
 </body>
+</html>
