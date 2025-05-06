@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--show that this page is made of html-->
+<html>
+<head>
+    <title> myStudy </title>
+    <link href="https://cdn-icons-png.flaticon.com/128/1947/1947931.png" rel="icon" type="image/x-icon">
+    <meta charset="utf-8">
+    <style>
+        .text-rainbow-animation {
+            font-family: sans-serif;
+            font-size: 50px;
+            background-image: 
+            linear-gradient(to bottom, blue, pink); 
+        
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;  
+            -webkit-text-stroke: 1px rgb(0, 0, 0); /* Add black border line */
+        }
+
+        .gradient-line {
+            border: 1px solid transparent;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, #efbbff,#d896ff,#be29ec,#800080,#660066, #efbbff);
+            background-size: 300% 100%;
+            margin: 20px 0;
+            border-radius: 3px;
+
+            animation: rainbow-animation 20s linear infinite;
+        }
+    
+        @keyframes rainbow-animation {
+          to {
+            background-position: 4500vh;
+          }
+        }
+      </style>
+</head>
+
+<!--divide head and body-->
+
+<body>
+    <h1 class="text-rainbow-animation"><p style="text-align: center;">
+      Record </p></h1>
+    <div class="gradient-line"></div>
+
+    <h6><a href="home.html" title="home">
+        <p style="text-align: right; margin: 20px;"> home </p>
+    </a></h6>
+    
+    <ul>
+        <li>Git</li>
+        <li>HTML</li>
+        <li>(add soon)</li>
+    </ul>
+
+    <h6><a href="secret.html" target="_blank" title="?">
+        <p style="text-align: right;"> secret </p>
+    </a></h6>
+
+    <p style="margin-top: 30px;"> 
+        <a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="html5 specification">
+    Hypertext Markup Language (HTML)</a> is the standard markup language <br>
+    for <strong><u> creating web pages </strong></u> and web applications.</p>
+
+    <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7661.png" width="25%">
+    <br>(meaningless image)
+
+    <p style="margin-top: 30px;">Web browsers receive HTML documents from a web server or <br>
+    from local storage and render them into multimedia web pages.</p>
+
+    <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7668.png" width="25%">
+    <br>(meaningless image2)
+    <!--<tag> contents </tag> : tag contains various functions-->
+    <!--<meta charset="utf-8"> : save file to utf-8, when korean char is broken-->
+</body>
+</html>
