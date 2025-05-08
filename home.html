@@ -5,6 +5,8 @@
     <title> myStudy </title>
     <link href="https://cdn-icons-png.flaticon.com/128/1947/1947931.png" rel="icon" type="image/x-icon">
     <meta charset="utf-8">
+    <!--<meta charset="utf-8"> : save file to utf-8, when korean char is broken-->
+
     <style>
         .text-rainbow-animation {
             font-family: sans-serif;
@@ -73,7 +75,11 @@
     <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7668.png" width="25%">
     <br>(meaningless image2)
     <!--<tag> contents </tag> : tag contains various functions-->
-    <!--<meta charset="utf-8"> : save file to utf-8, when korean char is broken-->
+
+    <h2><p style="text-align: center;"> Music </p></h2>
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=YwkOHnq_T7o" frameborder="0" allowfullscreen></iframe>
+      </p>
 
     <p>
         <div id="disqus_thread"></div>
@@ -100,3 +106,14 @@
       </p>
 </body>
 </html>
+
+<!--Memo-->
+<!--git pull origin main --rebase : 원격 저장소의 변경사항을 먼저 가져온 후, 내 변경사항을 그 위에 덧붙이는(rebase) 방식으로 병합-->
+
+<!--
+(파일 이름 바꾸고 git push 하는 방법)
+git add .
+git commit -m "<commit message>"
+git pull origin main --rebase
+git push origin main
+-->
