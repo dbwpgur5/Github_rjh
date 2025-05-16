@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--show that this page is made of html-->
 
 <html>
 
@@ -17,9 +16,23 @@
     <title> myStudy </title>
     <link href="https://cdn-icons-png.flaticon.com/128/1947/1947931.png" rel="icon" type="image/x-icon">
     <meta charset="utf-8">
-    <!--<meta charset="utf-8"> : save file to utf-8, when korean char is broken-->
 
     <style>
+
+        h1{
+            border-bottom: gray 1px solid;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        ol{
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 10px;
+            list-style: none;
+        }
+
         .text-rainbow-animation {
             font-family: sans-serif;
             font-size: 50px;
@@ -29,19 +42,20 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;  
-            -webkit-text-stroke: 1px rgb(0, 0, 0); /* Add black border line */
+            -webkit-text-stroke: 1px rgb(0, 0, 0);
         }
 
         .gradient-line {
             border: 1px solid transparent;
             height: 2px;
-            width: 100%;
+            width: 300px;
+            margin-right: auto;
+            margin-left: auto;
             background: linear-gradient(to right, #efbbff,#d896ff,#be29ec,#800080,#660066, #efbbff);
-            background-size: 300% 100%;
-            margin: 20px 0;
+            background-size: 200% 100%;
             border-radius: 3px;
 
-            animation: rainbow-animation 20s linear infinite;
+            animation: rainbow-animation 90s linear infinite;
         }
     
         @keyframes rainbow-animation {
@@ -57,22 +71,26 @@
     </style>
 </head>
 
-<!--divide head and body-->
-
 <body>
-    <h1 class="text-rainbow-animation"><p style="text-align: center;">
-      Record </p></h1>
     <div class="gradient-line"></div>
+    <h1 class="text-rainbow-animation"><a href="home.html" title="home"> Record </a></h1>
 
-    <h6><a href="home.html" title="home">
-        <p style="text-align: right; margin: 20px;"> home </p>
-    </a></h6>
+    <ol>
+        <li>
+            <a href="https://github.com/dbwpgur5" title="myGitHub">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="30px"> 
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com" title="YouTube">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/2048px-YouTube_icon_%282013-2017%29.png" width="30px">
+        </li>
+        <li>
+            <a href="https://dreamhack.io/" title="dreamhack">
+                <img src="https://dreamhack.io/assets/dreamhack_logo_sq.png" width="30px">
+        </li>
+    </ol>
     
-    <ul>
-        <li>Git</li>
-        <li>HTML</li>
-        <li>(add soon)</li>
-    </ul>
 
     <h6><a href="secret.html" target="_blank" title="?">
         <p style="text-align: right;"> secret </p>
@@ -101,7 +119,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </p>
-
+    
     <p>
         <div id="disqus_thread"></div>
     <script>
@@ -127,14 +145,3 @@
     </p>
 </body>
 </html>
-
-<!--Memo-->
-<!--git pull origin main --rebase : 원격 저장소의 변경사항을 먼저 가져온 후, 내 변경사항을 그 위에 덧붙이는(rebase) 방식으로 병합-->
-
-<!--
-(파일 이름 바꾸고 git push 하는 방법)
-git add .
-git commit -m "<commit message>"
-git pull origin main --rebase
-git push origin main
--->
