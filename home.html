@@ -13,24 +13,35 @@
     gtag('config', 'G-D24N1M1ED3');
     </script>
 
-    <title> myStudy </title>
+    <title> Home </title>
     <link href="https://cdn-icons-png.flaticon.com/128/1947/1947931.png" rel="icon" type="image/x-icon">
     <meta charset="utf-8">
 
     <style>
+        body{
+            margin: 0;
+        }
 
         h1{
             border-bottom: gray 1px solid;
             text-align: center;
+            width: auto;
             margin: 0;
-            padding: 20px;
+            padding: 10px;
         }
 
         ol{
             border-right: 1px solid gray;
             width: 100px;
             margin: 10px;
+            padding: 10px;
             list-style: none;
+        }
+
+        li{
+            color: gray;
+            font-size: 15px;
+            padding: 5px;
         }
 
         .text-rainbow-animation {
@@ -41,8 +52,7 @@
         
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;  
-            -webkit-text-stroke: 1px rgb(0, 0, 0);
+            -webkit-text-fill-color: transparent;
         }
 
         .gradient-line {
@@ -68,57 +78,56 @@
             text-decoration: none;
             color: black;
         }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: auto;
+            gap: 10px;
+        }
     </style>
 </head>
 
 <body>
     <div class="gradient-line"></div>
-    <h1 class="text-rainbow-animation"><a href="home.html" title="home"> Record </a></h1>
+    <h1 class="text-rainbow-animation"><a href="home.html" title="home"> Welcome </a></h1>
 
-    <ol>
-        <li>
-            <a href="https://github.com/dbwpgur5" title="myGitHub">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="30px"> 
-            </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com" title="YouTube">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/2048px-YouTube_icon_%282013-2017%29.png" width="30px">
-        </li>
-        <li>
-            <a href="https://dreamhack.io/" title="dreamhack">
-                <img src="https://dreamhack.io/assets/dreamhack_logo_sq.png" width="30px">
-        </li>
-    </ol>
+    <div id="grid">
+        <ol>
+            <li>About</li>
+            <li>Content 1</li>
+            <li>Content 2</li>
+        </ol>
+
+        <div id="content">
+            <h2><p style="text-align: center;"> Home </p></h2>
+            <p style="text-align: center;">
+                This is a home page for my study notes.
+                <br> 
+                I will share my study notes and other things here.
+            </p>
+        </div>
+    </div>
     
-
-    <h6><a href="secret.html" target="_blank" title="?">
-        <p style="text-align: right;"> secret </p>
-    </a></h6>
-
-    <p style="margin-top: 30px;"> 
-        <a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="html5 specification">
-    Hypertext Markup Language (HTML)</a> is the standard markup language <br>
-    for <strong><u> creating web pages </strong></u> and web applications.</p>
-
-    <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7661.png" width="25%">
-    <br>(meaningless image)
-
-    <p style="margin-top: 30px;">Web browsers receive HTML documents from a web server or <br>
-    from local storage and render them into multimedia web pages.</p>
-
-    <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7668.png" width="25%">
-    <br>(meaningless image2)
-    <!--<tag> contents </tag> : tag contains various functions-->
-
     <h2><p style="text-align: center;"> Music </p></h2>
 
     <p style="text-align: center;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5hxEVjf6sI8?si=OZB3prHnla7Ez_qi" 
+        <iframe width="360" height="185" src="https://www.youtube.com/embed/5hxEVjf6sI8?si=OZB3prHnla7Ez_qi" 
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </p>
+
+    <a href="https://github.com/dbwpgur5" title="myGitHub">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="30px"> 
+    </a>
+    <a href="https://www.youtube.com" title="YouTube">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/2048px-YouTube_icon_%282013-2017%29.png" width="30px">
+    </a>
+    <a href="https://dreamhack.io/" title="dreamhack">
+            <img src="https://dreamhack.io/assets/dreamhack_logo_sq.png" width="30px">
+    </a>
+    <a href="secret.html" target="_blank" title="?"> secret </a>
     
     <p>
         <div id="disqus_thread"></div>
@@ -141,7 +150,7 @@
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
     </p>
+
 </body>
 </html>
