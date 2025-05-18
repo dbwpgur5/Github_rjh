@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D24N1M1ED3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D24N1M1ED3');
+    </script>
+
+    <title> About </title>
+    <link href="https://cdn-icons-png.flaticon.com/128/1947/1947931.png" rel="icon" type="image/x-icon">
+    <meta charset="UTF-8">
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        h1{
+            border-bottom: gray 1px solid;
+            text-align: center;
+            width: auto;
+            margin: 0;
+            padding: 10px;
+        }
+
+        ol{
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            list-style: none;
+        }
+
+        li{
+            color: gray;
+            font-size: 15px;
+            padding: 5px;
+        }
+
+        .text-rainbow-animation {
+            font-family: sans-serif;
+            font-size: 50px;
+            background-image: 
+            linear-gradient(to bottom, blue, pink); 
+        
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-line {
+            border: 1px solid transparent;
+            height: 2px;
+            width: 300px;
+            margin-right: auto;
+            margin-left: auto;
+            background: linear-gradient(to right, #efbbff,#d896ff,#be29ec,#800080,#660066, #efbbff);
+            background-size: 200% 100%;
+            border-radius: 3px;
+
+            animation: rainbow-animation 90s linear infinite;
+        }
+    
+        @keyframes rainbow-animation {
+          to {
+            background-position: 4500vh;
+          }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+
+        #saw{
+            color: black;
+        }
+
+        #wrapper {
+            min-height: 100%;
+            box-sizing: border-box;
+        }
+
+        footer {
+            height: 100px;
+            background: #333;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient-line"></div>
+    <h1 class="text-rainbow-animation"><a href="home.html" title="home"> Home </a></h1>
+
+    <div id="grid">
+        <ol>
+            <li id="saw"><a href="about.html" title="about"> About </a></li>
+            <li>Content 1</li>
+            <li>Content 2</li>
+        </ol>
+
+        <div id="content">
+            <h2><p style="text-align: center;"> About </p></h2>
+            <p style="text-align: center;">
+                This is a About page.
+                <br> 
+                What should I write here?
+            </p>
+        </div>
+    </div>
+
+    
+    <div id="wrapper">
+    
+        <footer>
+        <a href="https://github.com/dbwpgur5" title="myGitHub">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="30px"> 
+                </a>
+                <a href="https://www.youtube.com" title="YouTube">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/2048px-YouTube_icon_%282013-2017%29.png" width="30px">
+                </a>
+                <a href="https://dreamhack.io/" title="dreamhack">
+                        <img src="https://dreamhack.io/assets/dreamhack_logo_sq.png" width="30px">
+                </a>
+        </footer>
+    </div>
+    
+</body>
+</html>
