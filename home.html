@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D24N1M1ED3"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -76,7 +76,7 @@
 
         a {
             text-decoration: none;
-            color: black;
+            color: grey;
         }
 
         #grid {
@@ -85,16 +85,29 @@
             grid-template-rows: auto;
             gap: 10px;
         }
+
+        #wrapper {
+            min-height: 100%;
+            box-sizing: border-box;
+        }
+
+        footer {
+            height: 100px;
+            background: #333;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+        }
     </style>
 </head>
 
 <body>
     <div class="gradient-line"></div>
-    <h1 class="text-rainbow-animation"><a href="home.html" title="home"> Welcome </a></h1>
+    <h1 class="text-rainbow-animation"><a href="home.html" title="home"> Home </a></h1>
 
     <div id="grid">
         <ol>
-            <li>About</li>
+            <li><a href="about.html" title="about"> About </a></li>
             <li>Content 1</li>
             <li>Content 2</li>
         </ol>
@@ -118,19 +131,6 @@
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </p>
 
-    <a href="https://github.com/dbwpgur5" title="myGitHub">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="30px"> 
-    </a>
-    <a href="https://www.youtube.com" title="YouTube">
-             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/2048px-YouTube_icon_%282013-2017%29.png" width="30px">
-    </a>
-    <a href="https://dreamhack.io/" title="dreamhack">
-            <img src="https://dreamhack.io/assets/dreamhack_logo_sq.png" width="30px">
-    </a>
-    <a href="secret.html" target="_blank" title="?"> secret </a>
-    
-    <p>
-        <div id="disqus_thread"></div>
     <script>
     
     /**
@@ -151,6 +151,22 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </p>
+
+    <div id="wrapper">
+    
+        <footer>
+        <a href="https://github.com/dbwpgur5" title="myGitHub">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="30px"> 
+                </a>
+                <a href="https://www.youtube.com" title="YouTube">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/2048px-YouTube_icon_%282013-2017%29.png" width="30px">
+                </a>
+                <a href="https://dreamhack.io/" title="dreamhack">
+                        <img src="https://dreamhack.io/assets/dreamhack_logo_sq.png" width="30px">
+                </a>
+                <a href="secret.html" target="_blank" title="?"> secret </a>
+        </footer>
+    </div>
 
 </body>
 </html>
